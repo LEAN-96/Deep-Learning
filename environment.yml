@@ -1,15 +1,16 @@
-name: example-environment
+name: deep-learning-environment
 channels:
   - conda-forge
 dependencies:
   - python
-  - obspy
   - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - tensorflow
   - pip
   - pip:
-    - nbgitpuller
-    - tensorflow
-    - pandas
-    - matplotlib
-    - seaborn
-    - scikit-learn
+      - nbgitpuller
+      - sphinx-gallery
+
